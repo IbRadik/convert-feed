@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title></title>
+    <link></link>
+    <description></description>
+    <item>
+      <title>Lenta.ru</title>
+      <link>https://lenta.ru</link>
+      <description>
+        Бывший президент Грузии Михаил Саакашвили пообещал вернуться в Грузию и сменить власть в стране. По словам Саакашвили, он вернется на родину, когда будет уверен в том, что «активная часть Грузии и оппозиция» смогут обеспечить ему 72 часа свободного передвижения по стране.
+      </description>
+      <pubDate>Thu, 24 Jan 2019 06:51:00 +0300</pubDate>
+      <dc:date>2019-01-24T06:51:00+03:00</dc:date>
+    </item>
+    <item>
+      <title>Lenta.ru : Новости</title>
+      <link>https://lenta.ru</link>
+      <description>Новости, статьи, фотографии, видео. Семь дней в неделю, 24 часа в сутки.</description>
+      <pubDate>Mon, 28 Jan 2019 02:08:00 +0300</pubDate>
+      <dc:date>2019-01-28T02:08:00+03:00</dc:date>
+    </item>
+  </channel>
+</rss>

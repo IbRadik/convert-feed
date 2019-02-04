@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require_relative 'reader'
+
+args = Hash.new
+
+if ARGV.size == 4 && ARGV[0].eql?("--out") && (ARGV[1].eql?("rss") or ARGV[1].eql?("atom")) && (ARGV[2].eql?("-s") or ARGV[2].eql?("-r"))
+  args[:token] = ARGV[0]
+  args[:out_type] = ARGV[1]
+  args[:sort_type] = ARGV[2]
+  args[:in_address] = ARGV[3]
+  args[:out_address] = './output_files/'
+  Reader.new(args[:in_address], args[:out_type], args[:sort_type], args[:out_address])
+else
+  puts "Arguments of command line is not valid"
+  puts "Example: convert-feed --out rss -r <path to file>"
+end
