@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'date'
 require 'time'
 
-
+# grader
 class Grader
   def initialize
     @sorted_date_news = Array.new

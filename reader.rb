@@ -6,34 +6,48 @@ require_relative 'converter'
 require_relative 'writter'
 require 'active_support/all'
 
-
+# reader
 class Reader
-  def initialize(in_path, out_type, sort_type, out_path)
-    # @news_storage = Array.new
+  # def initialize(in_path, out_type, sort_type)
+  def initialize(options, in_path)
+
+    out_type = options[:out_format]
+    if options[:sort_type_r]
+      sort_type = "-r"
+    elsif options[:sort_type_s]
+      sort_type = "-s"
+    else
+      sort_type = "-"
+    end
+
+    @out_path = './output_files/'
     xml = read_data(in_path)
     news_storage_list = storage_data(xml)
     sorted_news_list = sort_selector(sort_type, news_storage_list)
-    convert_selector(out_type, sorted_news_list, out_path)
+    convert_selector(out_type, sorted_news_list)
   end
 
-  def convert_selector(out_type, sorted_news_list, out_path)
+  def convert_selector(out_type, sorted_news_list)
     converter = Converter.new
     writter = Writter.new
     if out_type.eql?("rss")
       rss_for_save = converter.to_rss(sorted_news_list)
-      writter.save_to_rss(rss_for_save, out_path)
+      writter.save_to_rss(rss_for_save, @out_path)
     elsif out_type.eql?("atom")
       atom_for_save = converter.to_atom(sorted_news_list)
-      writter.save_to_atom(atom_for_save, out_path)
+      writter.save_to_atom(atom_for_save, @out_path)
     end
   end
 
   def sort_selector(sort_type, news_storage)
-    grader = Grader.new
     if sort_type.eql?("-r")
+      grader = Grader.new
       grader.sort_revers(news_storage)
     elsif sort_type.eql?("-s")
+      grader = Grader.new
       grader.sort_by_date(news_storage)
+    else
+      news_storage
     end
   end
 
@@ -44,7 +58,6 @@ class Reader
       else
         begin
           xml = Nokogiri::XML(open(path))
-          # storage_data(xml)
         rescue
           puts "Error: No such file or directory"
         end
@@ -67,10 +80,10 @@ class Reader
     else
       news = xml.xpath("//xmlns:entry")
       for i in 0..news.length - 1 do
-        news_storage.append({"title": news[i].xpath("//xmlns:title")[i].content,
-                              "link": news[i].xpath("//xmlns:link")[i].content,
-                              "body": news[i].xpath("//xmlns:summary")[i].content,
-                              "date": Time.parse(news[i].xpath("//xmlns:updated")[i].content)})
+        news_storage.append({"title": news.xpath("//xmlns:title")[i + 1].content,
+                              "link": news.xpath("//xmlns:link")[i + 1].content,
+                              "body": news.xpath("//xmlns:summary")[i].content,
+                              "date": Time.parse(news.xpath("//xmlns:updated")[i + 1].content)})
       end
     end
     news_storage
@@ -78,15 +91,25 @@ class Reader
 end
 
 
-# args = Hash.new
+
+
+# require 'optparse'
 #
-# if ARGV.size == 4 && ARGV[0].eql?("--out") && (ARGV[1].eql?("rss") or ARGV[1].eql?("atom")) && (ARGV[2].eql?("-s") or ARGV[2].eql?("-r"))
-#   args[:token] = ARGV[0]
-#   args[:out_type] = ARGV[1]
-#   args[:sort_type] = ARGV[2]
-#   args[:address] = ARGV[3]
-#   Reader.new(args[:address], args[:out_type], args[:sort_type])
-# else
-#   puts "Arguments of command line is not valid"
-#   puts "Example: convert-feed --out rss -r <path to file>"
-# end
+# options = {}
+# optparse = OptionParser.new do |opts|
+#
+#     opts.banner = "Usage: #{$PROGRAM_NAME} [options]"
+#     opts.on("-r", "--revers", "revers elements") do |sort_type_r|
+#       options[:sort_type_r] = sort_type_r
+#     end
+#     opts.on("-s", "--sort", "sort elements") do |sort_type_s|
+#       options[:sort_type_s] = sort_type_s
+#     end
+#     opts.on("--out", '--out format', 'Output feed format: atom/rss ') do |out_format|
+#       options[:out_format] = out_format.downcase
+#     end
+#
+# end.parse!
+#
+#
+# Reader.new(options, ARGV.first)

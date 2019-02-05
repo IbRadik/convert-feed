@@ -1,6 +1,6 @@
 require 'nokogiri'
 
-
+# writter
 class Writter
   def save_to_rss(data_for_save, out_path)
     file = File.new(out_path + 'out_rss.xml', 'w')

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b57e9998-1834-4036-b1e3-9cfeaf9001f3" name="Default Changelist" comment="" />
+    <list default="true" id="b57e9998-1834-4036-b1e3-9cfeaf9001f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/convert-feed.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Parser/Parser.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Readers/FileReader.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Readers/UrlReader.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/main.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ReaderTest.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/news_rss_test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert-feed" beforeDir="false" afterPath="$PROJECT_DIR$/convert-feed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter.rb" beforeDir="false" afterPath="$PROJECT_DIR$/converter.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/grader.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_atom" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/news_atom_test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_rss" beforeDir="false" afterPath="$PROJECT_DIR$/news_rss.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_files/out_atom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_files/out_rss.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/reader.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/news_atom_test" beforeDir="false" afterPath="$PROJECT_DIR$/news_atom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/old_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writter.rb" beforeDir="false" afterPath="$PROJECT_DIR$/writter.rb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,82 +36,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/convert-feed.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/reader.rb">
+        <entry file="file://$PROJECT_DIR$/lib/main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="140">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/converter.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/writter.rb">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/news_rss_test.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output_files/out_atom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news_atom">
+        <entry file="file://$PROJECT_DIR$/lib/Readers/FileReader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="18" selection-end-column="7" />
+            <state relative-caret-position="80">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/convert-feed">
+        <entry file="file://$PROJECT_DIR$/lib/Parser/Parser.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            <state relative-caret-position="20">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/fixtures/news_atom_test">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news_rss">
+        <entry file="file://$PROJECT_DIR$/test/ReaderTest.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/out_rss.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/test/old_test.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="88" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/fixtures/news_atom_test.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news_rss.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reader.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -106,10 +138,15 @@
       <find>opasno</find>
       <find>No such file or directory</find>
       <find>@news_storage</find>
+      <find>out_path</find>
+      <find>storage_data</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -130,24 +167,35 @@
         <option value="$PROJECT_DIR$/test.rb" />
         <option value="$PROJECT_DIR$/for_test" />
         <option value="$PROJECT_DIR$/convert-feed.rb" />
-        <option value="$PROJECT_DIR$/grader.rb" />
-        <option value="$PROJECT_DIR$/converter.rb" />
-        <option value="$PROJECT_DIR$/writter.rb" />
-        <option value="$PROJECT_DIR$/convert-feed" />
-        <option value="$PROJECT_DIR$/news_atom" />
         <option value="$PROJECT_DIR$/test/fixtures/news_atom_test" />
         <option value="$PROJECT_DIR$/news_rss" />
+        <option value="$PROJECT_DIR$/news_atom" />
+        <option value="$PROJECT_DIR$/convert-feed" />
         <option value="$PROJECT_DIR$/reader.rb" />
+        <option value="$PROJECT_DIR$/writter.rb" />
+        <option value="$PROJECT_DIR$/grader.rb" />
+        <option value="$PROJECT_DIR$/converter.rb" />
+        <option value="$PROJECT_DIR$/main.rb" />
+        <option value="$PROJECT_DIR$/lib/UrlReader.rb" />
+        <option value="$PROJECT_DIR$/lib/FileReader.rb" />
+        <option value="$PROJECT_DIR$/lib/Readers/FileReader.rb" />
+        <option value="$PROJECT_DIR$/lib/Readers/UrlReader.rb" />
+        <option value="$PROJECT_DIR$/lib/Parser/Parser.rb" />
         <option value="$PROJECT_DIR$/test/test.rb" />
+        <option value="$PROJECT_DIR$/test/ReaderTest.rb" />
+        <option value="$PROJECT_DIR$/bin/main.rb" />
+        <option value="$PROJECT_DIR$/bin/convert-feed.rb" />
+        <option value="$PROJECT_DIR$/lib/main.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="394" />
-    <option name="y" value="200" />
-    <option name="width" value="1411" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1101" />
     <option name="height" value="1049" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -163,18 +211,12 @@
             <path>
               <item name="convert-feed" type="b2602c69:ProjectViewProjectNode" />
               <item name="convert-feed" type="462c0819:PsiDirectoryNode" />
-              <item name="output_files" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="convert-feed" type="b2602c69:ProjectViewProjectNode" />
               <item name="convert-feed" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="convert-feed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="convert-feed" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,6 +235,11 @@
       <recent name="$PROJECT_DIR$/test/fixtures" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/lib/Readers" />
+      <recent name="$PROJECT_DIR$/bin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -206,7 +253,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.writter">
+  <component name="RunManager" selected="Ruby.UrlReader">
+    <configuration name="UrlReader" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="convert-feed" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/lib" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/lib/Readers/UrlReader.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <configuration name="converter" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="convert-feed" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -225,39 +290,21 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="for_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+    <configuration name="old_test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="convert-feed" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
       <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
       <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
       <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/for_test.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="grader" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="convert-feed" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/grader.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/test/old_test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -276,24 +323,6 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/reader.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="convert-feed" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/test/test.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
@@ -317,11 +346,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.UrlReader" />
         <item itemvalue="Ruby.writter" />
-        <item itemvalue="Ruby.test" />
+        <item itemvalue="Ruby.old_test" />
         <item itemvalue="Ruby.reader" />
         <item itemvalue="Ruby.converter" />
-        <item itemvalue="Ruby.for_test" />
       </list>
     </recent_temporary>
   </component>
@@ -343,26 +372,30 @@
       <workItem from="1548999183031" duration="22425000" />
       <workItem from="1549027389408" duration="2642000" />
       <workItem from="1549030405898" duration="61000" />
-      <workItem from="1549257474499" duration="673000" />
+      <workItem from="1549257474499" duration="10003000" />
+      <workItem from="1549277925295" duration="6957000" />
+      <workItem from="1549344985641" duration="6167000" />
+      <workItem from="1549352577938" duration="7242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98810000" />
+    <option name="totallyTimeSpent" value="128506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1931378" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13226342" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4997233" visible="true" weight="0.41163793" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4997233" visible="true" weight="0.30669546" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5002767" side_tool="true" weight="0.38793105" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" weight="0.3297414" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3297414" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32937366" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.24568966" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -404,78 +437,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/test/out_rss.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/converter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/writter.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="140">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_files/out_rss.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/converter.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/writter.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output_files/out_atom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_files/out_rss.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_atom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Readers/UrlReader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/old_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="88" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ReaderTest.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/news_rss_test.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/news_atom">
+    <entry file="file://$PROJECT_DIR$/test/fixtures/news_rss_test.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_rss.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="160">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Parser/Parser.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/news_rss_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/news_atom_test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convert-feed">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/fixtures/news_atom_test">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news_rss">
+    <entry file="file://$PROJECT_DIR$/lib/Readers/FileReader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/out_rss.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="220">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/convert-feed.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
         </state>
       </provider>
     </entry>

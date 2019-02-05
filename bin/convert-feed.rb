@@ -1,9 +1,11 @@
 #!/usr/bin/env ruby
-require_relative 'reader'
 require 'optparse'
+require_relative '../lib/main'
 
-options = {}
-optparse = OptionParser.new do |opts|
+
+begin
+  options = {}
+  optparse = OptionParser.new do |opts|
 
     opts.banner = "Usage: #{$PROGRAM_NAME} [options]"
     opts.on("-r", "--revers", "revers elements") do |sort_type_r|
@@ -15,4 +17,12 @@ optparse = OptionParser.new do |opts|
     opts.on("--out", '--out format', 'Output feed format: atom/rss ') do |out_format|
       options[:out_format] = out_format.downcase
     end
-end.parse!
+  end.parse!
+
+
+
+  Main.scenario(options, ARGV.first)
+
+rescue OptionParser::InvalidOption
+  puts 'Arguments is not valid'
+end

@@ -16,4 +16,11 @@
     <updated>2005-07-14T12:00:00Z</updated>
     <summary>Это простая запись в блоге</summary>
   </entry>
+  <entry>
+    <id>http://www.example.org/entries/1</id>
+    <title>Простая запись в блоге 2</title>
+    <link href="/blog/2005/08/1" />
+    <updated>2005-08-14T12:00:00Z</updated>
+    <summary>Это простая запись в блоге</summary>
+  </entry>
 </feed>
