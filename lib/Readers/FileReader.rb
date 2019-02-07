@@ -1,5 +1,6 @@
 require 'nokogiri'
 
+
 module FileReader
   def self.can_read?(path)
     File.exist?(path)
@@ -13,7 +14,3 @@ module FileReader
     end
   end
 end
-
-
-# puts FileReader.can_read?('../news_rss_test.xml')
-# puts FileReader.read('../news_rss_test.xml')

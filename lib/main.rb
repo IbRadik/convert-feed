@@ -4,11 +4,14 @@ require_relative 'Parser/AtomParser'
 require_relative 'Parser/RSSParser'
 require_relative 'Sorters/SortByData'
 require_relative 'Sorters/SortReverse'
+require_relative 'Converters/AtomConverter'
+require_relative 'Converters/RSSConverter'
 
 module Main
   Readers = [FileReader, UrlReader]
   Parsers = [AtomParser, RSSParser]
   Sorters = [SortByData, SorterReverse]
+  Converters = [AtomConverter, RSSConverter]
   def self.scenario(options, path)
     begin
       reader = Readers.find{ |reader| reader.can_read?(path) }
@@ -22,14 +25,15 @@ module Main
     ceil_parser = parser.new
     content = ceil_parser.parse(xml_doc)
 
-    sort_types = options.select{ |key, value| value == true }.keys
+    sort_types = options.select{ |key, value| value.eql?(true) }.keys
 
-    for sort in sort_types do
-      for operator in Sorters
-        content = operator.sort_data(content, sort)
-      end
+    sort_types.each do |sort|
+      Sorters.each{ |operator| operator.applicable?(sort) ? content = operator.sort_data(content) : next }
     end
 
+    converter = Converters.find{ |converter| converter.applicable?(options[:out_format]) }
+    converted_data = converter.convert(content)
 
+    print converted_data
   end
 end

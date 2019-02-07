@@ -1,6 +1,7 @@
 require 'nokogiri'
 require "open-uri"
 
+
 module UrlReader
   def self.can_read?(path)
     open(path).status == ["200", "OK"]
@@ -14,7 +15,3 @@ module UrlReader
     end
   end
 end
-
-
-# puts UrlReader.can_read?('https://ru.hexlet.io/lessons.rss')
-# puts UrlReader.read('https://ru.hexlet.io/lessons.rss')
