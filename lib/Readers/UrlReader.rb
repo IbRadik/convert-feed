@@ -3,11 +3,7 @@ require "open-uri"
 
 module UrlReader
   def self.can_read?(path)
-    if open(path).status == ["200", "OK"]
-      true
-    else
-      false
-    end
+    open(path).status == ["200", "OK"]
   end
 
   def self.read(path)

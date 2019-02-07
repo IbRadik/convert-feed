@@ -10,8 +10,8 @@ class ReaderTest < MiniTest::Unit::TestCase
   end
 
   def test_read()
-    rss = File.open('../test/fixtures/news_atom_test.xml') { |f| Nokogiri::XML(f) }
-    tested_rss = FileReader.read('../test/fixtures/news_atom_test.xml')
+    rss = File.open('../test/fixtures/news_rss_test.xml') { |f| Nokogiri::XML(f) }.text
+    tested_rss = FileReader.read('../test/fixtures/news_rss_test.xml').text
     assert rss == tested_rss
   end
 end
