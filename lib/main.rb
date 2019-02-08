@@ -34,6 +34,6 @@ module Main
     converter = Converters.find{ |converter| converter.applicable?(options[:out_format]) }
     converted_data = converter.convert(content)
 
-    print converted_data
+    File.open('../output_files/output_file.xml', 'w') { |file| file.write(converted_data) }
   end
 end

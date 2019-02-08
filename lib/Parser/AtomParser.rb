@@ -33,7 +33,7 @@ class AtomParser < Parser
   protected
 
   def scrap_link(links)
-    if links.class.to_s == 'Array'
+    if links.class.to_s.eql?( 'Array')
       link = links[0]['href']
     else
       link = links['href']

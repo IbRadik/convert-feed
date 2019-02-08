@@ -13,6 +13,8 @@ class RSSParser < Parser
     content_storage = Array.new
     result_storage = Hash.new
 
+    # print hash['rss']['channel']['item'].class
+
     hash['rss']['channel']['item'].each do |item|
       list = Array.new
       list.append(item["title"])
@@ -32,10 +34,12 @@ class RSSParser < Parser
   protected
 
   def scrap_link(links)
-    if links.class.to_s == 'Array'
+    if links.class.to_s.eql?('Array')
       link = links[0]
+    elsif links.class.to_s.eql?('Hash')
+      link = links['link'][0]
     else
-      link = links['href']
+      link = links
     end
   end
 end
