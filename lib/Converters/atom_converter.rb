@@ -24,7 +24,7 @@ module AtomConverter
     atom
   end
 
-  def self.applicable?(option)
-    option.eql?('atom')
+  def self.applicable?(options)
+    options[:out_format].eql?('atom')
   end
 end

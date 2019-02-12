@@ -1,37 +1,43 @@
-require_relative 'Readers/FileReader'
-require_relative 'Readers/UrlReader'
-require_relative 'Parser/AtomParser'
-require_relative 'Parser/RSSParser'
-require_relative 'Sorters/SortByData'
-require_relative 'Sorters/SortReverse'
-require_relative 'Converters/AtomConverter'
-require_relative 'Converters/RSSConverter'
+require 'active_support/core_ext/hash/conversions'
+Dir['../lib/Readers/*.rb'].each {|file| require_relative file}
+Dir['../lib/Sorters/*.rb'].each {|file| require_relative file}
+Dir['../lib/Parsers/*.rb'].each {|file| require_relative file}
+Dir['../lib/Converters/*.rb'].each {|file| require_relative file}
+
+
 
 module Main
-  Readers = [FileReader, UrlReader]
-  Parsers = [AtomParser, RSSParser]
-  Sorters = [SortByData, SorterReverse]
-  Converters = [AtomConverter, RSSConverter]
-  def self.scenario(options, path)
+  Readers = Dir.children("../lib/Readers").map { |reader| File.basename(reader, ".rb").classify.constantize }
+  Sorters = Dir.children("../lib/Sorters").map { |sorter| File.basename(sorter, ".rb").classify.constantize }
+  Parsers = Dir.children("../lib/Parsers").map { |parser| File.basename(parser, ".rb").classify.constantize }
+  Converters = Dir.children("../lib/Converters").map { |converter| File.basename(converter, ".*").classify.constantize }
+  def self.program_scenario(options, path)
     begin
       reader = Readers.find{ |reader| reader.can_read?(path) }
-      xml_doc = reader.read(path)
+      doc = reader.read(path)
     rescue NoMethodError
       puts 'Сorresponding reader is not find'
       exit
     end
 
-    parser = Parsers.find{ |parser| parser.valid_format?(xml_doc) }
-    ceil_parser = parser.new
-    content = ceil_parser.parse(xml_doc)
-
-    sort_types = options.select{ |key, value| value.eql?(true) }.keys
-
-    sort_types.each do |sort|
-      Sorters.each{ |operator| operator.applicable?(sort) ? content = operator.sort_data(content) : next }
+    begin
+      parser = Parsers.find{ |parser| parser.can_parse?(doc) }
+      ceil_parser = parser.new
+      content = ceil_parser.parse(doc)
+    rescue  NoMethodError
+      puts 'Сorresponding parser is not find'
+      exit
     end
 
-    converter = Converters.find{ |converter| converter.applicable?(options[:out_format]) }
+    # sort_types = options.select{ |key, value| value.eql?(true) }.keys
+
+    options[:content].each_key do |sort, value|
+      Sorters.each do |operator|
+        operator.applicable?(sort) ? content = operator.sort_data(content) : next
+      end
+    end
+
+    converter = Converters.find{ |converter| converter.applicable?(options) }
     converted_data = converter.convert(content)
 
     File.open('../output_files/output_file.xml', 'w') { |file| file.write(converted_data) }

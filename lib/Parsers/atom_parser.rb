@@ -1,7 +1,7 @@
-require_relative 'Parser'
+require_relative 'parser'
 
 class AtomParser < Parser
-  def self.valid_format?(xml)
+  def self.can_parse?(xml)
     begin
       xml.xpath('//xmlns:entry').text
       true

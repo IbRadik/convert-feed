@@ -1,12 +1,12 @@
 require 'minitest'
 require 'minitest/unit'
 require 'minitest/autorun'
-require_relative '../../lib/Readers/FileReader'
+require_relative '../../lib/Readers/file_reader'
 
 
 class FileReaderTest < MiniTest::Unit::TestCase
   def test_can_read?
-    assert true == FileReader.can_read?('../fixtures/news_atom_test.xml')
+    assert FileReader.can_read?('../fixtures/news_atom_test.xml')
   end
 
   def test_read()

@@ -3,7 +3,7 @@ require 'minitest/unit'
 require 'minitest/autorun'
 require "open-uri"
 require 'nokogiri'
-require_relative '../../lib/Readers/UrlReader'
+require_relative '../../lib/Readers/url_reader'
 
 
 class UrlReaderTest < MiniTest::Unit::TestCase

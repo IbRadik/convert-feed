@@ -1,7 +1,7 @@
-require_relative 'Parser'
+require_relative 'parser'
 
-class RSSParser < Parser
-  def self.valid_format?(xml)
+class RssParser < Parser
+  def self.can_parse?(xml)
     if !xml.xpath("//rss").text.eql?("")
       true
     else

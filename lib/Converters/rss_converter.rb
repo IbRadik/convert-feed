@@ -3,7 +3,7 @@ require 'time'
 require 'rss'
 
 
-module RSSConverter
+module RssConverter
   def self.convert(hash_content)
     rss = RSS::Maker.make('2.0') do |maker|
       maker.channel.link = hash_content[:link]
@@ -22,7 +22,7 @@ module RSSConverter
     rss
   end
 
-  def self.applicable?(option)
-    option.eql?('rss')
+  def self.applicable?(options)
+    options[:out_format].eql?('rss')
   end
 end

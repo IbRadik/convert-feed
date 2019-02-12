@@ -10,5 +10,6 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.2, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="libxml-ruby (v2.9.0, RVM: ruby-2.6.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ratom (v0.9.0, RVM: ruby-2.6.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="require_all (v2.0.0, RVM: ruby-2.6.0) [gem]" level="application" />
   </component>
 </module>
