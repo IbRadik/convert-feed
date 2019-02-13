@@ -4,16 +4,23 @@
       xml:lang="en"
       xml:base="http://www.example.org">
   <id>http://www.example.org/myfeed</id>
-  <title>Простая лента</title>
+  <title>Шапка</title>
   <updated>2005-07-15T12:00:00Z</updated>
   <link href="/blog" />
   <link rel="self" href="/myfeed" />
-  <author><name>Юч Огбуджи</name></author>
+  <author><name>Автор</name></author>
   <entry>
     <id>http://www.example.org/entries/1</id>
-    <title>Простая запись в блоге</title>
+    <title>Первая запись</title>
     <link href="/blog/2005/07/1" />
     <updated>2005-07-14T12:00:00Z</updated>
-    <summary>Это простая запись в блоге</summary>
+    <summary>Описание первой записи</summary>
+  </entry>
+  <entry>
+    <id>http://www.example.org/entries/1</id>
+    <title>Вторая запись</title>
+    <link href="/blog/2005/08/1" />
+    <updated>2005-08-14T12:00:00Z</updated>
+    <summary>Описание второй записи</summary>
   </entry>
 </feed>

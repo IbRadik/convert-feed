@@ -15,10 +15,10 @@
     <atom:link rel="self" type="application/rss+xml" href="http://lenta.ru/rss/news"/>
     <item>
       <guid>https://lenta.ru/news/2019/01/28/old_friend/</guid>
-      <title>Саакашвили пригрозил сменить власть в Грузии за 72 часа</title>
-      <link>https://lenta.ru/news/2019/01/28/old_friend/</link>
+      <title>Запись 1</title>
+      <link>Ссылка 1</link>
       <description>
-        <![CDATA[Бывший президент Грузии Михаил Саакашвили пообещал вернуться в Грузию и сменить власть в стране. По словам Саакашвили, он вернется на родину, когда будет уверен в том, что «активная часть Грузии и оппозиция» смогут обеспечить ему 72 часа свободного передвижения по стране.]]>
+        Описание 1
       </description>
       <pubDate>Mon, 28 Jan 2019 02:08:00 +0300</pubDate>
       <enclosure url="http://icdn.lenta.ru/images/2019/01/28/02/20190128020324126/pic_2ecc07153f8c00c456fee0eb1cddb282.jpg" type="image/jpeg" length="19655"/>
@@ -26,10 +26,10 @@
     </item>
     <item>
       <guid>https://lenta.ru/news/2019/01/28/protiv/</guid>
-      <title>Россияне высказались по вопросу передачи Курил Японии</title>
-      <link>https://lenta.ru/news/2019/01/28/protiv/</link>
+      <title>Запись 2</title>
+      <link>Ссылка 2</link>
       <description>
-        <![CDATA[Большинство россиян (77 процентов) выступают против передачи Японии Курильских островов. Об этом свидетельствуют данные опроса ВЦИОМ. В исследовании говорится, что о требовании Токио вернуть южные острова Курильской гряды знают 79 процентов россиян. 14 процентов участников опроса выступили за передачу островов.]]>
+        Описание 2
       </description>
       <pubDate>Mon, 24 Jan 2019 06:51:00 +0300</pubDate>
       <enclosure url="http://icdn.lenta.ru/images/2019/01/28/06/20190128064953452/pic_c193d65e25bc3a13ba1c06ae53e3eebd.jpg" type="image/jpeg" length="109475"/>

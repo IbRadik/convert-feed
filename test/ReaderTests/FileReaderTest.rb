@@ -1,7 +1,7 @@
 require 'minitest'
 require 'minitest/unit'
 require 'minitest/autorun'
-require_relative '../../lib/Readers/file_reader'
+require_relative '../../lib/readers/file_reader'
 
 
 class FileReaderTest < MiniTest::Unit::TestCase

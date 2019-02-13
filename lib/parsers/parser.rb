@@ -1,4 +1,4 @@
-# require 'active_support/core_ext/hash/conversions'
+require 'active_support/core_ext/hash/conversions'
 
 class Parser
   def self.valid_format?(xml)

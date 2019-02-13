@@ -1,16 +1,16 @@
 require 'active_support/core_ext/hash/conversions'
-Dir['../lib/Readers/*.rb'].each {|file| require_relative file}
-Dir['../lib/Sorters/*.rb'].each {|file| require_relative file}
-Dir['../lib/Parsers/*.rb'].each {|file| require_relative file}
-Dir['../lib/Converters/*.rb'].each {|file| require_relative file}
+Dir['../lib/readers/*.rb'].each {|file| require_relative file}
+Dir['../lib/sorters/*.rb'].each {|file| require_relative file}
+Dir['../lib/parsers/*.rb'].each {|file| require_relative file}
+Dir['../lib/converters/*.rb'].each {|file| require_relative file}
 
 
 
 module Main
-  Readers = Dir.children("../lib/Readers").map { |reader| File.basename(reader, ".rb").classify.constantize }
-  Sorters = Dir.children("../lib/Sorters").map { |sorter| File.basename(sorter, ".rb").classify.constantize }
-  Parsers = Dir.children("../lib/Parsers").map { |parser| File.basename(parser, ".rb").classify.constantize }
-  Converters = Dir.children("../lib/Converters").map { |converter| File.basename(converter, ".*").classify.constantize }
+  Readers = Dir.children("../lib/readers").map { |reader| File.basename(reader, ".rb").classify.constantize }
+  Sorters = Dir.children("../lib/sorters").map { |sorter| File.basename(sorter, ".rb").classify.constantize }
+  Parsers = Dir.children("../lib/parsers").map { |parser| File.basename(parser, ".rb").classify.constantize }
+  Converters = Dir.children("../lib/converters").map { |converter| File.basename(converter, ".*").classify.constantize }
   def self.program_scenario(options, path)
     begin
       reader = Readers.find{ |reader| reader.can_read?(path) }

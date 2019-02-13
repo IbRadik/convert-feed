@@ -1,4 +1,7 @@
 require_relative 'parser'
+require 'nokogiri'
+require 'active_support/core_ext/hash/conversions'
+
 
 class AtomParser < Parser
   def self.can_parse?(xml)
